@@ -7,7 +7,7 @@ RDEPENDS = "lighttpd-module-fastcgi"
 S = "${WORKDIR}/git"
 SRCREV = "${AUTOREV}"
 SRC_URI = "\
-	git://git@github.com/youconnectAB/gatt-http-server.git;protocol=ssh \
+	git:///opt/workdir/youconnect/gatt-http-server \
 	file://80-gatt-server.conf \
 	"
 
