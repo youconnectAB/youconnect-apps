@@ -1,8 +1,10 @@
 PR = "r1"
 LICENSE = "CLOSED"
 
-DEPENDS = "json-c fastcgi libevent"
-RDEPENDS = "lighttpd-module-fastcgi"
+DEPENDS = "btd dbus-cplusplus-native dbus-cplusplus json-c fastcgi libevent"
+RDEPENDS = "dbus-cplusplus btd lighttpd-module-fastcgi"
+
+EXTRA_OECONF += "XMLDIR=${STAGING_DATADIR}/btd/"
 
 S = "${WORKDIR}/git"
 SRCREV = "${AUTOREV}"
